@@ -22,15 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
               console.log(data)
             }
         },
-        // series: {
-        //   data: [
-        //     ['35',101331,6000,],
-        //     ['45',288034,101331,6000],
-        //     ['55',662963,295688,108985],
-        //     ['65',1407634,685149,317875],
-        //     ['75',2017352,1004909,488909]
-        //   ]
-        // },
         plotOptions: {
           series: {
             clip: false,
@@ -38,15 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         },
         legend: {
-            align: 'left',
+            align: 'right',
             symbolRadius: 0,
             verticalAlign: 'top',
-            x: 35,
-            itemMarginTop: 10,
-            floating: true
+            x: 10,
+            itemMarginTop: -10,
         },
         xAxis: {
             labels: {
+                autoRotation: false,
                 style: {
                     whiteSpace: 'nowrap',
                 }
@@ -83,9 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 legend: {
                     align: 'left',
-                    x: -18,
-                    floating: false,
-                    itemMarginTop: -10
+                    x: -18
                 },
                 tooltip: {
                     enabled: false
