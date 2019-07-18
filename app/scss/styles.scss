@@ -45,7 +45,7 @@ $breakpoint-lg: 717px;
     height: 300px;
     margin-top: -10px;
     @include sm-md-xl {
-      height: 400px;
+      // height: 400px;
     }
   }
 
@@ -53,5 +53,9 @@ $breakpoint-lg: 717px;
     width: 214px;
     margin-top: 20px;
   }
-  
+
+}
+
+.highcharts-series-group {
+  transform: translate(0,-.5px);
 }
